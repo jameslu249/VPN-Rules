@@ -91,6 +91,10 @@ payload:
   # > Dify.AI
   - DOMAIN-SUFFIX,dify.ai
 
+  # > Custom AI
+  - DOMAIN-SUFFIX,aihubmix.com
+  - DOMAIN-SUFFIX,inferera.com
+
   # > GitHub Copilot
   - DOMAIN,api.github.com
 
