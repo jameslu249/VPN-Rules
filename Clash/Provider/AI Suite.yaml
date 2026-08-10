@@ -97,6 +97,7 @@ payload:
   - DOMAIN-SUFFIX,registry-1.docker.io
   - DOMAIN-SUFFIX,auth.docker.io
   - DOMAIN-SUFFIX,bbs.tgfcer.com
+  - DOMAIN-SUFFIX,s.tgfcer.com
 
   # > GitHub Copilot
   - DOMAIN,api.github.com
