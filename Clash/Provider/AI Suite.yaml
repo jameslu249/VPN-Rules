@@ -94,6 +94,9 @@ payload:
   # > Custom AI
   - DOMAIN-SUFFIX,aihubmix.com
   - DOMAIN-SUFFIX,inferera.com
+  - DOMAIN-SUFFIX,registry-1.docker.io
+  - DOMAIN-SUFFIX,auth.docker.io
+  - DOMAIN-SUFFIX,bbs.tgfcer.com
 
   # > GitHub Copilot
   - DOMAIN,api.github.com
