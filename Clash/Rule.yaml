@@ -1,5 +1,6 @@
   - RULE-SET,AdBlock,AdBlock
   - RULE-SET,Special,DIRECT
+  - RULE-SET,Domestic Common,国内常用
 
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Disney Plus,Disney Plus
@@ -89,6 +90,12 @@ rule-providers:
     behavior: classical
     url: 'https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Special.yaml'
     path: ./Rules/Special
+    interval: 86400
+  Domestic Common:
+    type: http
+    behavior: classical
+    url: 'https://raw.githubusercontent.com/jameslu249/VPN-Rules/main/Clash/Provider/Domestic%20Common.yaml'
+    path: ./Rules/Domestic_Common
     interval: 86400
   PROXY:
     type: http

@@ -1,0 +1,135 @@
+# 国内常用：购物、支付及相关资源；默认直连，广告拦截仍优先。
+# 域名参考：
+# https://github.com/v2fly/domain-list-community/blob/master/data/alibaba
+# https://github.com/v2fly/domain-list-community/blob/master/data/jd
+# https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/AliPay/AliPay.yaml
+# https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/JingDong/JingDong.yaml
+# https://help.aliyun.com/zh/captcha/captcha2-0/user-guide/captcha-2-0-client-access-faq
+# 仅收录业务域名及指定验证服务，不把整个阿里云、京东云或共享 CDN IP 段直连。
+payload:
+  # 淘宝、天猫及购物资源
+  - DOMAIN-SUFFIX,taobao
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,taobao.net
+  - DOMAIN-SUFFIX,taobao.org
+  - DOMAIN-SUFFIX,taobaocdn.com
+  - DOMAIN-SUFFIX,tmall
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-SUFFIX,tmall.hk
+  - DOMAIN-SUFFIX,tmall.ru
+  - DOMAIN-SUFFIX,tmalltv.com
+  - DOMAIN-SUFFIX,taotian.com
+  - DOMAIN-SUFFIX,tb.cn
+  - DOMAIN-SUFFIX,tbcache.com
+  - DOMAIN-SUFFIX,tbcdn.cn
+  - DOMAIN-SUFFIX,tburl.in
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,ialicdn.com
+  - DOMAIN-SUFFIX,aliimg.com
+  - DOMAIN-SUFFIX,aliapp.org
+  - DOMAIN-SUFFIX,alibabausercontent.com
+  - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-SUFFIX,etao.com
+  - DOMAIN-SUFFIX,juhuasuan.com
+  - DOMAIN-SUFFIX,pailitao.com
+  - DOMAIN-SUFFIX,alimama.cn
+  - DOMAIN-SUFFIX,alimama.com
+  - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,tanx.com
+
+  # 支付宝及蚂蚁支付资源
+  - DOMAIN-SUFFIX,alipay
+  - DOMAIN-SUFFIX,alipay-corp.com
+  - DOMAIN-SUFFIX,alipay-eco.com
+  - DOMAIN-SUFFIX,alipay-inc.com
+  - DOMAIN-SUFFIX,alipay-traffic.com
+  - DOMAIN-SUFFIX,alipay.cn
+  - DOMAIN-SUFFIX,alipay.com
+  - DOMAIN-SUFFIX,alipay.com.cn
+  - DOMAIN-SUFFIX,alipay.hk
+  - DOMAIN-SUFFIX,alipay.net
+  - DOMAIN-SUFFIX,alipaydesign.com
+  - DOMAIN-SUFFIX,alipaydev.com
+  - DOMAIN-SUFFIX,alipaydns.com
+  - DOMAIN-SUFFIX,alipayeshop.com
+  - DOMAIN-SUFFIX,alipaylog.com
+  - DOMAIN-SUFFIX,alipaymo.com
+  - DOMAIN-SUFFIX,alipayobjects.com
+  - DOMAIN-SUFFIX,alipayplus.com
+  - DOMAIN-SUFFIX,antfin.com
+  - DOMAIN-SUFFIX,antgroup.com
+  - DOMAIN-SUFFIX,antgroup-inc.cn
+
+  # 京东商城、图片、登录、支付和物流
+  - DOMAIN-SUFFIX,3.cn
+  - DOMAIN-SUFFIX,300hu.com
+  - DOMAIN-SUFFIX,360buy.cn
+  - DOMAIN-SUFFIX,360buy.com
+  - DOMAIN-SUFFIX,360buy.com.cn
+  - DOMAIN-SUFFIX,360buyimg.com
+  - DOMAIN-SUFFIX,360buyinternational.com
+  - DOMAIN-SUFFIX,360top.com
+  - DOMAIN-SUFFIX,baitiao.cn
+  - DOMAIN-SUFFIX,baitiao.com
+  - DOMAIN-SUFFIX,ibaitiao.com
+  - DOMAIN-SUFFIX,buyjingxi.com
+  - DOMAIN-SUFFIX,chinabank.com.cn
+  - DOMAIN-SUFFIX,isvjcloud.com
+  - DOMAIN-SUFFIX,isvjd.com
+  - DOMAIN-SUFFIX,jd-app.com
+  - DOMAIN-SUFFIX,jd.cn
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,jd.com.cn
+  - DOMAIN-SUFFIX,jd.hk
+  - DOMAIN-SUFFIX,jd.shop
+  - DOMAIN-SUFFIX,jdcache.com
+  - DOMAIN-SUFFIX,jdcdn.com
+  - DOMAIN-SUFFIX,jdcontent.com
+  - DOMAIN-SUFFIX,jddebug.com
+  - DOMAIN-SUFFIX,jdemall.com
+  - DOMAIN-SUFFIX,jdfinance.com
+  - DOMAIN-SUFFIX,jdfw1.com
+  - DOMAIN-SUFFIX,jdgslb.com
+  - DOMAIN-SUFFIX,jdgslb.net
+  - DOMAIN-SUFFIX,jdjinrong.com
+  - DOMAIN-SUFFIX,jdl.cn
+  - DOMAIN-SUFFIX,jdl.com
+  - DOMAIN-SUFFIX,jdl.com.cn
+  - DOMAIN-SUFFIX,jdpay.com
+  - DOMAIN-SUFFIX,jdpaydns.com
+  - DOMAIN-SUFFIX,jdsmartkf.com
+  - DOMAIN-SUFFIX,jdwl.com
+  - DOMAIN-SUFFIX,jdworldwide.com
+  - DOMAIN-SUFFIX,jingdong.com
+  - DOMAIN-SUFFIX,jingdongjinrong.com
+  - DOMAIN-SUFFIX,jingxi.com
+  - DOMAIN-SUFFIX,jkcsjd.com
+  - DOMAIN-SUFFIX,wanggou.com
+  - DOMAIN-SUFFIX,wangyin.com
+  - DOMAIN-SUFFIX,yhcdn.cn
+  - DOMAIN-SUFFIX,yhd.com
+  - DOMAIN-SUFFIX,yihaodian.com
+  - DOMAIN-SUFFIX,yihaodianimg.com
+
+  # 阿里验证服务：仅匹配官方列出的资源、验证实例和设备检测端点
+  - DOMAIN,cf.aliyun.com
+  - DOMAIN,diablo.alibaba.com
+  - DOMAIN,static-captcha.aliyuncs.com
+  - DOMAIN,static-captcha-sgp.aliyuncs.com
+  - DOMAIN,cloudauth-device.aliyuncs.com
+  - DOMAIN,cn-shanghai.device.saf.aliyuncs.com
+  - DOMAIN,cloudauth-device.ap-southeast-1.aliyuncs.com
+  - DOMAIN,ap-southeast-1.device.saf.aliyuncs.com
+  - DOMAIN,ap-southeast-1-ga.device.saf.aliyuncs.com
+  - DOMAIN,cloudauth-device-dualstack.cn-shanghai.aliyuncs.com
+  - DOMAIN,cloudauth-device-dualstack.ap-southeast-1.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-b.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-dual.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-dual-b.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-southeast.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-southeast-b.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-southeast-dual.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-southeast-dual-b.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-ga-web.aliyuncs.com
+  - DOMAIN-SUFFIX,captcha-open-ga-web-b.aliyuncs.com
