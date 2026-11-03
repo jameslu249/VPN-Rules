@@ -1,4 +1,4 @@
-# 国内常用：购物、支付及相关资源；默认直连，广告拦截仍优先。
+# 国内常用：购物、支付、办公及相关资源；默认直连，广告拦截仍优先。
 # 域名参考：
 # https://github.com/v2fly/domain-list-community/blob/master/data/alibaba
 # https://github.com/v2fly/domain-list-community/blob/master/data/jd
@@ -7,6 +7,10 @@
 # https://help.aliyun.com/zh/captcha/captcha2-0/user-guide/captcha-2-0-client-access-faq
 # 仅收录业务域名及指定验证服务，不把整个阿里云、京东云或共享 CDN IP 段直连。
 payload:
+  # 钉钉 API 与 Stream 长连接，仅匹配程序使用的两个端点
+  - DOMAIN,api.dingtalk.com
+  - DOMAIN,wss-open-connection-union.dingtalk.com
+
   # 淘宝、天猫及购物资源
   - DOMAIN-SUFFIX,taobao
   - DOMAIN-SUFFIX,taobao.com
